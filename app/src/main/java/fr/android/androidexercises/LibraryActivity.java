@@ -13,9 +13,9 @@ public class LibraryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_library);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
 
-        TextView messageTextView = (TextView) findViewById(R.id.messageTextView);
+        TextView messageTextView = findViewById(R.id.messageTextView);
         // TODO call setText() on messageTextView
 
         setSupportActionBar(toolbar);

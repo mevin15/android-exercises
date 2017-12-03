@@ -3,7 +3,7 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+    buildToolsVersion "27.0.1"
 
     defaultConfig {
         applicationId "fr.android.androidexercises"
@@ -21,13 +21,12 @@ android {
 }
 
 dependencies {
-    testCompile 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
 
-    def support_version = "26.0.1"
+    def support_version = "27.0.2"
 
-    compile(
-            "com.android.support:appcompat-v7:$support_version",
-            "com.android.support:design:$support_version"
-    )
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation("com.android.support:appcompat-v7:$support_version",
+            "com.android.support:design:$support_version")
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }
